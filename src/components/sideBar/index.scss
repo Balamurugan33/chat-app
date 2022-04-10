@@ -1,0 +1,117 @@
+@import '../../scss/colors.scss';
+
+.side-bar-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    justify-content: space-between;
+    width: 4.5rem;
+    height: calc(100vh - 3.5rem);
+    padding-left: 2px;
+    box-shadow: inset -5px -7px 6px 0px #dee2e6;
+    overflow: hidden;
+    .icon-containe {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+        .icon-button {
+          background: none;
+          border: none;
+          box-shadow: none;
+          color: #8a8a8a;
+          box-sizing: border-box;
+          .icon-text {
+            font-size: .8rem;
+          }
+        }
+      
+        .line {
+          margin: 0 1.6rem;
+          border-bottom: 1px solid #eaeaed;
+        }
+        
+        .icon-button:hover {
+          background-color: whitesmoke;
+        }
+
+        .icon-button:active {
+          color: $primary;
+          border-left: 2px solid $primary;
+        }
+  
+        .icon-button:focus {
+          color: $primary;
+          border-left: 2px solid $primary;
+          box-shadow: none;
+        }
+    }
+  }
+
+  .side-bar:hover {
+    overflow-y: auto;
+  }
+
+  .side-panel {
+    width: calc(100% - 5rem);
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    box-shadow: inset -2px 0px 10px -5px #aaa;
+
+    .side-panel-header {
+      height: 4rem;
+      margin: 0;
+      align-items: center;
+      color: #7d7d7d;
+      border-bottom: 2px solid #e0e0e0;
+
+      .title {
+        font-size: large;
+        color: black;
+        font-weight: bold;
+        padding-right: .5rem;
+      }
+    }
+    .contact-container {
+      padding: 0;
+      margin: 0;
+      height: calc(100vh - 7.5rem);
+      overflow: hidden;
+      .contact {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: .3rem 0;
+        cursor: pointer;
+  
+        .user-icon {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        .name {
+          font-size: medium;
+          color: #242424;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .sub-title {
+          font-size: small;
+          color: #242424;
+        }
+      }
+      .contact:hover {
+        background-color: $white;
+      }
+    }
+    .contact-container:hover {
+      overflow-y: auto;
+    }
+  }
+}

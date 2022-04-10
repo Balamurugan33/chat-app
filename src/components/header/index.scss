@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 3.5rem;
+  background: #444791;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  .title {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .user-img {
+    width: 2rem;
+    border-radius: 50%;
+  }
+
+  .input-bg {
+    background-color: #dadae9;
+  }
+}

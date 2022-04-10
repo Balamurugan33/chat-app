@@ -1,0 +1,22 @@
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1; 
+}

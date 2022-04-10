@@ -1,0 +1,12 @@
+const constants = {
+    SET_USER: 'SET_USER',
+    GET_USER: 'GET_USER',
+    GET_USER_SUCCESS: 'GET_USER_SUCCESS',
+    GET_USER_FAIL: 'GET_USER_FAIL',
+    SET_LOADING: 'SET_LOADING',
+    SEND_MESSAGE: 'SEND_MESSAGE',
+    ADD_CHAT: 'ADD_CHAT',
+    GET_CHATS: 'GET_CHATS'
+}
+
+export default constants;

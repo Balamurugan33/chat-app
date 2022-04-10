@@ -162,14 +162,14 @@ const SideBar = () => {
   const getUserCard = (user) => {
     return (
       <li className='contact'>
-        <Col className='d-flex justify-content-center' xs={3}>
+        <Col className='d-flex justify-content-center' md={3} sm={3}>
           <img className='user-icon' src={user.userImg} />
         </Col>
-        <Col className='ps-1' xs={7}>
+        <Col className='ps-1' md={7} sm={9}>
           <div className='name'>{user.name}</div>
           <div className='sub-title'>{user.msg}</div>
         </Col>
-        <Col xs={2}>
+        <Col className='d-none d-sm-inline-block' md={2}>
           4/8
         </Col>
       </li>
@@ -188,7 +188,7 @@ const SideBar = () => {
 
   return (
     <div className='side-bar-container'>
-      <div className='side-bar'>
+      <div className='side-bar d-none d-sm-inline-block'>
         <div  className='icon-containe'>
           {icons.map((sIcon) => {
             return (
